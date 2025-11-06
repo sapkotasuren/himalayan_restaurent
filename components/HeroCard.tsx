@@ -16,7 +16,6 @@ const HeroCard = () => {
         </div>
       </Link>
 
-      {/* Main Card */}
       <div className="bg-gradient-to-br from-[#faf7f2] via-white to-[#f5f0e8] h-full w-full p-6 md:p-8 rounded-2xl shadow-2xl relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4b78f]/10 rounded-full blur-3xl"></div>
@@ -62,7 +61,6 @@ const HeroCard = () => {
               />
             </div>
 
-            {/* Information Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 mt-4">
               
               <div className="bg-gradient-to-br from-white to-[#faf7f2] p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-[#d4b78f]/20 group">
@@ -102,7 +100,6 @@ const HeroCard = () => {
                 </div>
               </div>
 
-              {/* Contact Card */}
               <div className="bg-gradient-to-br from-white to-[#faf7f2] p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-[#d4b78f]/20 group">
                 <div className="flex items-center space-x-3 mb-3">
                   <svg className="w-6 h-6 text-[#8c6d46] group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

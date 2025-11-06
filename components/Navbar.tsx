@@ -37,9 +37,8 @@ const Navbar = () => {
             </ul>
 
             <Link href="/">
-              <Image src="/." height={180} width={180} alt="Himalayan Logo" />
+              <Image src="/himalayan_logo.png" height={220} width={250} alt="Himalayan Logo" />
             </Link>
-
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-x-10 text-xl">
 

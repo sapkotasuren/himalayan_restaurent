@@ -1,4 +1,4 @@
-import { Facebook, Mail, MapPin, PhoneCall } from "lucide-react";
+import { Facebook,Instagram, Mail, MapPin, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -72,9 +72,9 @@ himalayagent@gmail.com              </a>
         {/* Logo & Social Media */}
         <div className="flex flex-col items-center border-gray-200 pt-16">
           <Image
-            src="/"
-            height={120}
-            width={120}
+            src="/himalayan_logo.jpeg"
+            height={180}
+            width={180}
             alt="Himalayan Logo"
             className="mb-8"
           />
@@ -89,14 +89,14 @@ himalayagent@gmail.com              </a>
             >
               <Facebook className="h-7 w-7" />
             </a>
-            {/* <a
+            <a
               href="/"
               target="_blank"
               rel="noopener noreferrer"
               className=" transition"
             >
               <Instagram className="h-7 w-7" />
-            </a> */}
+            </a>
             <a
               href="https://maps.app.goo.gl/8sQFfNA8bW2zHDL79"
               target="_blank"
@@ -105,16 +105,11 @@ himalayagent@gmail.com              </a>
               <MapPin className="h-7 w-7" />
             </a>
             <a
-              href="https://en.tripadvisor.com.hk/Restaurant_Review-g294217-d21229105-Reviews-Rajdoot_Restaurant_Bar-Hong_Kong.html"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/tripadvisor.png"
-                width={36}
-                height={36}
-                alt="Tripadvisor"
-              />
+              
             </a>
             <a href=""></a>
           </div>
@@ -123,13 +118,13 @@ himalayagent@gmail.com              </a>
             &copy; {new Date().getFullYear()} Himalayan Restaurent. All Rights Reserved.
             <br />
             <span>
-              With  By{" "}
+              By{" "}
               <a
                 target="_blank"
                 href="https://squarelabs.com.np/"
-                className="hover:text-green-700 italic"
+                className="hover:text-green-700 "
               >
-                SquareLabs🖤♡
+                SquareLabs
               </a>
             </span>
           </p>

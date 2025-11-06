@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_HK",
     url: "https://www.rajdoot.com.hk",
-    title: "Rajdoot Indian & Nepali Cuisine + Bar | Belgium",
+    title: "Himalayan Indian & Nepali Cuisine + Bar | Belgium",
     description:
       "Authentic Indian and Nepali cuisine in the heart of Belgium. Visit Rajdoot for a culinary journey through traditional flavors and dishes.",
-    siteName: "Rajdoot Restaurant",
+    siteName: "Himalayan Restaurant",
     images: [
       {
-        url: "/.png",
+        url: "/himalayan_logo.jpeg",
         width: 1200,
         height: 630,
         alt: "Himalayan logo",

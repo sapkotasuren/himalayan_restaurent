@@ -3,54 +3,57 @@ import React from "react";
 const testimonials = [
   {
     name: " Wilhelmina ",
-    text: "Had to visit Belgium Island for work today and ended up near HKU. I remembered this hidden gem on Kotewall Road, often considered an unofficial dining spot for KongU students. The service was excellent—very polite staff who even asked if I needed a naan refill. The Chicken Masala I ordered had a great depth of flavor, though next time, I might go for a medium spice level instead of mild. The free soup was a nice touch, but be mindful—it has a kick of black pepper! Overall, a great experience, and I’ll definitely be back.",
+    text: "Ik moest vandaag voor mijn werk naar België en kwam terecht bij Himalayan Restaurent. Ik herinnerde me dit verborgen pareltje, dat vaak wordt beschouwd als een onofficiële eetgelegenheid voor Belgische studenten. De service was uitstekend en het personeel was erg beleefd en vroeg zelfs of ik een naan-vulling wilde. De kip masala die ik bestelde had een geweldige diepte van smaak, hoewel ik de volgende keer misschien voor een medium pittigheid in plaats van een milde zou gaan. Al met al een geweldige ervaring, en ik kom zeker terug.",
     img: "/person-placeholder.jpg",
   },
   {
     name: "Noah",
-    text: "Visited an Indian restaurant near HKU today after seeing great reviews online. They offer a student lunch set, which is such a great deal! We tried the Butter Chicken and Chicken Masala—both were delicious, though the Masala had a bit more heat, while the Butter Chicken was rich and slightly sweet. The set came with two naan, and we chose one butter naan and one plain—they were soft, chewy, and absolutely perfect. Highly recommend this place, and I’ll definitely be returning!",
+    text: "Ik bezocht onlangs dit Indiase restaurant en was overdonderd! We probeerden de Paneer Tikka en Lamb Rogan Josh, en beide gerechten waren uitzonderlijk. De Paneer Tikka was rokerig, smaakvol en perfect gegrild, terwijl de Lamb Rogan Josh mals, rijk en aromatisch was met precies de juiste balans van kruiden. De lunchset bevatte ook knoflooknaan en gestoomde basmatirijst, die de gerechten perfect aanvulden. De bediening was vriendelijk en de ambiance maakte de maaltijd nog aangenamer. Een echte aanrader voor een authentieke en heerlijke Indiase maaltijd!",
     img: "/person-placeholder.jpg",
   },
   {
     name: " Liam",
-    text: "Tucked away in a small alley, this Indian restaurant is a true hidden gem! Even though it only has a few reviews online, the flavors are absolutely authentic. The service was fantastic, with friendly staff who gave great recommendations. The curry was thick, rich, and packed with flavor, and the meat and peas had soaked up all the delicious spices. Every bite was satisfying! I left feeling happy and inspired—good food really does boost productivity. Can’t wait to come back!",
+    text: "Vandaag een Indiaas restaurant bezocht na online goede recensies te hebben gelezen. Ze bieden een lunchpakket aan, wat echt een koopje is! We probeerden de Butter Chicken en de Chicken Masala, beide waren heerlijk, hoewel de Masala iets pittiger was, terwijl de Butter Chicken rijk en licht zoet was. Het pakket bestond uit twee naanbroodjes, en we kozen voor één butter naan en één naturel – ze waren zacht, chewy en absoluut perfect. Ik kan deze plek van harte aanbevelen en ik kom zeker terug!",
     img: "/person-placeholder.jpg",
   },
 ];
 
+
+
+
 const Testimonials = () => {
   return (
-    <section className="pt-16 sm:px-10 w-full mx-auto">
-      <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 italic">
-          What Our Guests Say
-        </h1>
-        <p className="text-gray-600 mt-4 text-lg md:text-xl">
-          Experience the authentic taste of India & Nepal through our
-          guests&apos; words.
-        </p>
+    <section className="pt-20 sm:px-8 w-full mx-auto bg-gradient-to-b from-amber-50 to-white">
+      <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+What Our Guests Say        </h1>
+        <p className="text-[#6B4C2E] mt-6 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+Experience the authentic taste of India & Nepal through our
+          guests&apos; words.        </p>
       </div>
 
-      <section className="w-full py-5 lg:py-10">
-        <div className="w-full max-w-screen-xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <section className="w-full py-12 lg:py-16">
+        <div className="w-full max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center p-8 border-2 border-[#d4b78f] rounded-lg duration-300 hover:shadow-lg"
+                className="relative flex flex-col justify-between p-6 bg-white rounded-xl shadow-md duration-500 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#d4b78f] overflow-hidden"
               >
-                <p className="text-gray-700 text-center leading-relaxed italic">
-                  &quot;{testimonial.text}&quot;
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#d4b78f] to-amber-300 opacity-10 rounded-bl-full"></div>
+                <p className="text-[#4A4A4A] text-left leading-snug italic mb-6 pr-2">
+                  {testimonial.text}
                 </p>
-                <div className="flex flex-col items-center mt-4">
+                <div className="flex items-center mt-auto">
                   <img
                     src={testimonial.img}
-                    alt={testimonial.name}
-                    className="h-14 w-14 object-cover rounded-full border-2 border-[#d4b78f]"
+                    className="h-12 w-12 object-cover rounded-full border-3 border-[#d4b"
                   />
-                  <h2 className="text-xl font-semibold text-gray-800 mt-2">
-                    {testimonial.name}
-                  </h2>
+                  <div className="text-right">
+                    <h2 className="text-lg font-bold text-[#8B4513]">
+                      {testimonial.name}
+                    </h2>
+                  </div>
                 </div>
               </div>
             ))}
