@@ -2,7 +2,13 @@
 
 import React, { useEffect } from "react";
 
-const WelcomeModal = ({ isOpen, onClose }) => {
+// Define prop types
+interface WelcomeModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) => {
   // Prevent scrolling when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -10,6 +16,9 @@ const WelcomeModal = ({ isOpen, onClose }) => {
     } else {
       document.body.style.overflow = "auto";
     }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [isOpen]);
 
   if (!isOpen) return null;
