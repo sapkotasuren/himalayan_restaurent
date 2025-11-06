@@ -36,9 +36,8 @@ const Navbar = () => {
               </li>
             </ul>
 
-           {/* Logo */}
             <Link href="/">
-              <Image src="/logo.png" height={180} width={180} alt="Himalayan Logo" />
+              <Image src="/." height={180} width={180} alt="Himalayan Logo" />
             </Link>
 
             {/* Desktop Menu */}

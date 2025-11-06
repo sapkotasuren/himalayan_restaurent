@@ -37,8 +37,7 @@ const FeaturedSection = () => {
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
               <p className="text-base md:text-xl text-white leading-relaxed">
-                We accept reservations for Private parties, Group Events,
-                Catering, Birthday Celebrations, Family Dining, or Group Dining
+                Reservations available for birthdays, private parties, group dining, catering, and family celebrations.
               </p>
             </div>
           </div>

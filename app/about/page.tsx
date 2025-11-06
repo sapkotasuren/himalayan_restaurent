@@ -2,8 +2,9 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
+
 import Navbar from "@/components/Navbar";
 
 const features = [
@@ -30,14 +31,17 @@ const features = [
 const vibes = Array.from({ length:5 }, (_, i) => i + 1);
 
 const About = () => {
-  useEffect(() => {
+useEffect(() => {
+  import("aos").then((AOS) => {
     AOS.init({
       duration: 800,
       easing: "ease-out",
       once: true,
       offset: 50,
     });
-  }, []);
+  });
+}, []);
+
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#faf7f2] to-white">
@@ -59,8 +63,7 @@ const About = () => {
         <div className="relative mx-auto max-w-screen-lg w-full h-full min-h-[40vh] lg:min-h-[60vh] flex flex-col justify-center items-center text-white text-center px-4">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              ABOUT OUR STORY
-            </h1>
+The Story Behind Us            </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto"></div>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
               Experience the finest Indian,  & Nepali cuisine in Belgium

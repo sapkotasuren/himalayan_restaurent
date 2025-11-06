@@ -3,29 +3,21 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 const foodItems = [
-  { id: 1, src: "/foods/1.png", title: "Food" },
-  { id: 2, src: "/foods/2.png", title: "Food" },
-  { id: 3, src: "/foods/3.png", title: "Food" },
-  { id: 4, src: "/foods/4.png", title: "Food" },
-  { id: 5, src: "/foods/5.png", title: "Food" },
-  { id: 6, src: "/foods/6.png", title: "Food" },
-  { id: 7, src: "/foods/7.png", title: "Food" },
-  { id: 8, src: "/foods/8.png", title: "Food" },
-  { id: 9, src: "/foods/9.png", title: "Food" },
-  { id: 10, src: "/foods/10.png", title: "Food" },
-  { id: 11, src: "/foods/11.png", title: "Food" },
-  { id: 12, src: "/foods/12.png", title: "Food" },
-  { id: 13, src: "/foods/13.jpg", title: "Food" },
-  { id: 14, src: "/foods/14.jpg", title: "Food" },
-  { id: 15, src: "/foods/15.jpg", title: "Food" },
-  { id: 16, src: "/foods/16.jpg", title: "Food" },
-  { id: 17, src: "/foods/17.jpg", title: "Food" },
+  { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
+    { id: 3, src: "/foods/13.jpg", title: "Rice" },
+      { id: 4, src: "/foods/14.jpg", title: "Pulau" },
+{ id: 15, src: "/foods/15.jpg", title: "Desserts" },
+  { id: 16, src: "/foods/16.jpg", title: "Desserts" },
+  { id: 17, src: "/foods/17.jpg", title: "Palak Paneer" },
   { id: 18, src: "/foods/18.jpg", title: "Food" },
   { id: 19, src: "/foods/19.jpg", title: "Food" },
   { id: 20, src: "/foods/20.jpg", title: "Food" },
-  { id: 21, src: "/foods/21.png", title: "Food" },
-  { id: 22, src: "/foods/22.png", title: "Food" },
-  { id: 23, src: "/foods/23.png", title: "Food" },
+  // { id: 21, src: "/foods/21.jpg", title: "Food" },
+  { id: 1, src: "/foods/pizza.jpg", title: "Pizza" },
+
+  
+  // { id: 22, src: "/foods/22.jpg", title: "Food" },
+  // { id: 23, src: "/foods/23.jpg", title: "Food" },
   { id: 24, src: "/foods/24.jpg", title: "Food" },
   { id: 25, src: "/foods/25.jpg", title: "Food" },
   { id: 26, src: "/foods/26.jpg", title: "Food" },
@@ -34,7 +26,7 @@ const foodItems = [
   { id: 29, src: "/foods/29.jpg", title: "Food" },
   { id: 30, src: "/foods/30.jpg", title: "Food" },
   { id: 31, src: "/foods/31.jpg", title: "Food" },
-  { id: 32, src: "/foods/32.jpg", title: "Food" },
+  { id: 32, src: "/foods/naan.jpg", title: "Butter naan" },
 ];
 
 const Gallery = () => {
@@ -62,24 +54,32 @@ const Gallery = () => {
         </div>
       </section>
 
+      {/* Food Gallery */}
       <div className="p-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">
           Our Food Gallery
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {foodItems.map((item) => (
             <div
               key={item.id}
-              className="relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer"
             >
               <Image
                 src={item.src}
                 alt={item.title}
-                width={300}
-                height={200}
-                className="rounded-lg object-cover w-full h-full"
+                width={400}
+                height={300}
+                className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
               />
-              <p className="text-center mt-2 font-medium">{item.title}</p>
+
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+                <p className="text-white text-xl font-semibold">
+                  {item.title}
+                </p>
+              </div>
             </div>
           ))}
         </div>

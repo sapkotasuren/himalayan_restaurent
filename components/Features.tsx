@@ -32,11 +32,10 @@ const Features = () => {
       <div className="w-full max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col items-center space-y-6 mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 italic">
-            Why people choose us?
+Discover Why Guests Love Us
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl text-center">
-            Experience the perfect blend of taste, ambiance, and exceptional service.
-          </p>
+Experience dining where flavor, ambiance, and service come together perfectly.          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">

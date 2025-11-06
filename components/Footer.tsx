@@ -6,12 +6,19 @@ const Footer = () => {
   return (
     <footer className="w-full py-16">
       <div className="mt-12 w-full max-w-screen-xl mx-auto my-20 rounded-lg h-[450px]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.73532837460255!2d114.13885421717929!3d22.286880436098947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ff814497271b%3A0x377e7f8f1d0cdd80!2sHong%20Kong%2C%20Shek%20Tong%20Tsui%2C%20On%20Ning%20Ln%2C%201-15%E8%99%9F%2C%20Tung%20Lee%20Mansion%2C%20Shop%201J!5e0!3m2!1sen!2snp!4v1742468554168!5m2!1sen!2snp"
-          className="w-full h-full border-none px-5"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+        <div className="mt-12 w-full max-w-screen-xl mx-auto my-20 rounded-lg h-[450px]">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.738191240358!2d3.721216776525122!3d51.057921843439765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371389b42eba1%3A0x2e34032056547960!2sOudburg%201%2C%209000%20Gent%2C%20Belgium!5e0!3m2!1sen!2snp!4v1762408634989!5m2!1sen!2snp"
+    width="600"
+    height="450"
+    style={{ border: 0 }} 
+    allowFullScreen 
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full h-full rounded-lg"
+  ></iframe>
+</div>
+
       </div>
       <div className="max-w-screen-lg mx-auto px-6">
 
@@ -57,7 +64,7 @@ himalayagent@gmail.com              </a>
             <div className="border-t border-[#d4b78f] pt-2 mt-1">
               <h4 className="font-serif text-[#513c28]">
                 Oudburg 1, 9000 Gent              </h4>
-              <p className="text-[#776552]">SAI YING PUN,Belgium</p>
+              <p className="text-[#776552]">Belgium</p>
             </div>
           </div>
         </div>
@@ -65,17 +72,17 @@ himalayagent@gmail.com              </a>
         {/* Logo & Social Media */}
         <div className="flex flex-col items-center border-gray-200 pt-16">
           <Image
-            src="/logo.png"
+            src="/"
             height={120}
             width={120}
-            alt="Rajdoot Logo"
+            alt="Himalayan Logo"
             className="mb-8"
           />
 
           {/* Social Media Links */}
           <div className="flex gap-8 mb-8">
             <a
-              href="https://www.facebook.com/share/15xV7Y6atb/?mibextid=wwXIfr"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className=" transition"
@@ -83,7 +90,7 @@ himalayagent@gmail.com              </a>
               <Facebook className="h-7 w-7" />
             </a>
             {/* <a
-              href="https://www.instagram.com/rajdoothk/"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className=" transition"
@@ -91,7 +98,7 @@ himalayagent@gmail.com              </a>
               <Instagram className="h-7 w-7" />
             </a> */}
             <a
-              href="https://www.google.com/maps/dir//Shop+1J+Hong+Kong+Shek+Tong+Tsui,+On+Ning+Ln,+1-15%E8%99%9F+Tung+Lee+Mansion/@22.2869127,114.1388455,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3403ff814497271b:0x377e7f8f1d0cdd80!2m2!1d114.1388455!2d22.2869127?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/8sQFfNA8bW2zHDL79"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -112,19 +119,17 @@ himalayagent@gmail.com              </a>
             <a href=""></a>
           </div>
 
-          {/* Copyright Notice */}
           <p className="text-sm lg:text-base text-gray-500 text-center">
-            &copy; {new Date().getFullYear()} Rajdoot Indian &
-            Nepalese Cuisine + Bar. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Himalayan Restaurent. All Rights Reserved.
             <br />
             <span>
-              With 💚 By{" "}
+              With  By{" "}
               <a
                 target="_blank"
                 href="https://squarelabs.com.np/"
                 className="hover:text-green-700 italic"
               >
-                SquareLabs Pvt.Ltd
+                SquareLabs🖤♡
               </a>
             </span>
           </p>

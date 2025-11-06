@@ -17,19 +17,11 @@ const Hero = () => {
         <Navbar />
         <div className="absolute inset-0 w-full h-full">
           <Image
-                src="/bg1.jpeg"
+                src="/place/4.jpeg"
             fill
             priority
             className="hidden lg:block object-cover fixed"
             alt="hero image"
-          />
-          <Image
-                src="/bg1.jpeg"
-            fill
-            priority
-            className="lg:hidden fixed"
-            alt="hero image"
-            style={{ objectFit: "cover", objectPosition: "left" }}
           />
 
           {/* Enhanced gradient overlay with warmth */}
@@ -46,16 +38,15 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center leading-tight tracking-tight">
-            Enjoy Delicious Indian,{" "}
+                      Delight in Authentic Indian and  
+,{" "}
             <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-              and Nepalese
-            </span>{" "}
-            Cuisines
+Nepalese Cuisine,  <br/>       
+   </span>{" "}
+            Right Here in Belgium
           </h1>
-          
           <p className="text-lg sm:text-xl text-center max-w-2xl leading-relaxed italic text-gray-200 font-light">
-            &quot;A place where every plate of dishes becomes a real work of art
-            that you can enjoy on your lips.&quot;
+            &quot;A place where each dish is crafted into a masterpiece, ready to delight your taste buds.&quot;
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -68,7 +59,7 @@ const Hero = () => {
             </button>
             <Link href="/reservation">
               <button className="group relative px-8 py-4 text-lg font-medium border-2 border-white/50 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-amber-400 hover:bg-amber-400/10">
-                <span className="relative z-10 group-hover:text-amber-400 transition-colors duration-300">Book a Seat</span>
+                <span className="relative z-10 group-hover:text-amber-400 transition-colors duration-300 ">Book a Seat</span>
               </button>
             </Link>
           </div>

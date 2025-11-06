@@ -97,7 +97,7 @@ const HeroCard = () => {
                 </div>
                 <div className="pl-9">
                   <p className="text-[#513c28] font-serif leading-relaxed">
-                    G/F, 1J Water Street<br/>Sai Ying Pun, Belgium
+                    Oudburg 1, 9000 Gent
                   </p>
                 </div>
               </div>

@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     siteName: "Rajdoot Restaurant",
     images: [
       {
-        url: "/rajdootlogo.png",
+        url: "/.png",
         width: 1200,
         height: 630,
-        alt: "Rajdoot Indian & Nepali Cuisine",
+        alt: "Himalayan logo",
       },
     ],
   },
@@ -133,7 +133,6 @@ export default function RootLayout({
                   closes: "22:00",
                 },
               ],
-              menu: "https://www.rajdoot.com.hk/menu",
               acceptsReservations: "True",
             }),
           }}
