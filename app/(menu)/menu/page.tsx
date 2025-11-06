@@ -378,11 +378,7 @@ const allItems = useMemo(() => {
                     className="group bg-gradient-to-r from-white to-orange-50 rounded-xl p-4 shadow-md border-2 border-orange-100 hover:border-orange-300 hover:shadow-xl transition-all duration-300 flex items-center gap-4 hover:scale-[1.01]"
                   >
                     <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
+                     
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 duration-300"></div>
                     </div>
                     

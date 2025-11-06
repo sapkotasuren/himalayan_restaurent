@@ -181,11 +181,7 @@ Our chefs combine traditional Himalayan recipes with modern cooking techniques t
                 >
                   <div className="mb-6 flex justify-center">
                     <div className="relative w-32 h-32 flex items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 rounded-full group-hover:scale-110 transition-transform duration-300">
-                      <img
-                        src={feature.image}
-                        alt="features image"
-                        className="h-20 w-auto object-contain"
-                      />
+                      
                     </div>
                   </div>
                   
