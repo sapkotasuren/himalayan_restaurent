@@ -40,7 +40,7 @@ export default function ReservationPage() {
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,  // Added NEXT_PUBLIC_
         {
           ...formData,
-          to_email: 'himalayagent@gmail.com', // Your email for testing
+          to_email: 'imanupagaire@gmail.com', // Your email for testing
         },
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
