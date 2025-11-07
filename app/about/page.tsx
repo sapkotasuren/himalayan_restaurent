@@ -51,7 +51,7 @@ useEffect(() => {
       <section className="relative min-h-[40vh] lg:min-h-[60vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/hero.jpg"
+            src="/1.jpeg"
             fill
             priority
             className="object-cover"
