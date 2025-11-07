@@ -33,7 +33,7 @@ const Hero = () => {
 
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/place/bg.jpeg"
+            src="/bg.jpeg"
             fill
             priority
             className="hidden lg:block object-cover fixed"
