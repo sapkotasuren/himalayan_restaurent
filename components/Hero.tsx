@@ -33,7 +33,7 @@ const Hero = () => {
 
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/place/4.jpeg"
+            src="/place/bg.jpeg"
             fill
             priority
             className="hidden lg:block object-cover fixed"
@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400"></div>
             <span className="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">
-              Premium Dining
+Premium dineren
             </span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
           </div>

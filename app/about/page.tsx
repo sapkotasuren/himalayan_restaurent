@@ -8,25 +8,25 @@ import "aos/dist/aos.css";
 import Navbar from "@/components/Navbar";
 
 const features = [
-  {
-    image: "/features1.png",
-    title: "Menu for every taste",
-    description:
-      "Discover our diverse menu featuring both classic favorites and innovative culinary creations.",
-  },
-  {
-    image: "/features2.png",
-    title: "Fresh Ingredients",
-    description:
-      "We source the finest local ingredients to ensure every dish exceeds your expectations.",
-  },
-  {
-    image: "/features3.png",
-    title: "Expert Chefs",
-    description:
-      "Our skilled chefs bring years of experience to create memorable dining experiences.",
-  },
-];
+    {
+      image: "/features1.png",
+      title: "Authentieke smaken",
+      description:
+        "Proef de echte Nepalese en Indiase keuken, met verse ingrediënten en passie in elk gerecht",
+    },
+    {
+      image: "/features2.png",
+      title: "Gastvrij en gezellig",
+      description:
+        "Of je komt voor een intiem diner of een avond met vrienden, bij ons voel je je altijd welkom.",
+    },
+    {
+      image: "/features3.png",
+      title: "Waar voor je geld",
+      description:
+        "Heerlijke porties, hoge kwaliteit en eerlijke prijzen maken elke maaltijd een feestje.",
+    },
+  ];
 
 const vibes = Array.from({ length:5 }, (_, i) => i + 1);
 
@@ -63,7 +63,8 @@ useEffect(() => {
         <div className="relative mx-auto max-w-screen-lg w-full h-full min-h-[40vh] lg:min-h-[60vh] flex flex-col justify-center items-center text-white text-center px-4">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-The Story Behind Us            </h1>
+Over ons          
+   </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto"></div>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
               Experience the finest Indian,  & Nepali cuisine in Belgium
@@ -93,22 +94,26 @@ The Story Behind Us            </h1>
             <div className="space-y-6 order-1 md:order-2">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                  Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-600">Himalayan</span>
+     Welkom bij                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-600">Himalaya Restaurant </span>
                 </h1>
                 <div className="h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
               </div>
     <p className="text-gray-700 text-lg leading-relaxed">
-      Nestled in the heart of Ghent, Belgium, Himalaya Restaurant offers an authentic blend of Indian, Nepalese cuisine. More than just a dining destination, Himalaya is a culinary journey through the rich and diverse flavors of the Indian subcontinent and beyond.
+     Welkom bij Himalaya Restaurant in het hart van Gent! Hier komen de smaken, kleuren en geuren van Nepal en India samen in een warme en gezellige sfeer.
+     </p>
+         <p className="text-gray-700 text-lg leading-relaxed">
 
-Our chefs combine traditional Himalayan recipes with modern cooking techniques to create dishes that celebrate both authenticity and innovation. Each meal is carefully prepared using fresh ingredients and natural spices, without artificial additives—allowing the true flavors and aromas of our heritage to shine through.
+     Vanaf het begin verwelkomen we iedereen met aandacht. Of je nu zin hebt in onze subtiel gekruide Nepalese momo’s en sizzlers, of in de rijke, geurige curries uit India, je proeft altijd passie in elk gerecht.
+     </p>
+    <p className="text-gray-700 text-lg leading-relaxed">
+
+     Ons interieur brengt een stukje Nepal naar Gent. Schilderijen tonen de seizoenen, bergen en specerijen. En onze bar? Die is echt speciaal: met de hand gemaakt door Nepalese ambachtslieden uit de Ghinder-gemeenschap, prachtig bewerkt hout en traditioneel design. Hier in het restaurant gemonteerd, en zeker een stukje Nepal dat je moet komen zien.
+
+Of je nu komt voor een rustig diner met z’n tweeën of een gezellige avond met vrienden en familie, bij ons ben je altijd welkom. Laat je verrassen door onze gerechten, onze gastvrijheid en de liefde waarmee we elke dag koken.
               </p>
               
               <p className="text-gray-700 text-lg leading-relaxed">
-                Our recipes strike the perfect balance between traditional
-                Indian and Nepalese wilderness food and modern cooking
-                techniques. Each dish is carefully prepared in its own juices,
-                without artificial additives, allowing the natural flavors and
-                aromas of our hand-selected spices to shine through.
+              We kunnen niet wachten om je te verwelkomen – laat je smaakavontuur beginnen!
               </p>
             </div>
           </div>
@@ -168,7 +173,8 @@ Our chefs combine traditional Himalayan recipes with modern cooking techniques t
           <div>
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-600">Us</span>
+                Waarom onze gasten van 
+ <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-600"> ons houden</span>
               </h2>
               <div className="h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto"></div>
             </div>
@@ -180,9 +186,15 @@ Our chefs combine traditional Himalayan recipes with modern cooking techniques t
                   className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-orange-200"
                 >
                   <div className="mb-6 flex justify-center">
-                    <div className="relative w-32 h-32 flex items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 rounded-full group-hover:scale-110 transition-transform duration-300">
-                      
-                    </div>
+                   <div className="relative w-32 h-32 flex items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 rounded-full group-hover:scale-110 transition-transform duration-300">
+  <Image
+    src={feature.image}
+    alt={feature.title}
+    fill
+    className="object-contain p-4"
+  />
+</div>
+
                   </div>
                   
                   <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-orange-600 transition-colors duration-300">

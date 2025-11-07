@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -26,10 +27,9 @@ const Testimonials = () => {
     <section className="pt-20 sm:px-8 w-full mx-auto bg-gradient-to-b from-amber-50 to-white">
       <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-What Our Guests Say        </h1>
+Wat onze gasten zeggen      </h1>
         <p className="text-[#6B4C2E] mt-6 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-Experience the authentic taste of India & Nepal through our
-          guests&apos; words.        </p>
+Ervaar de authentieke smaken van India & Nepal door de woorden van onze gasten.        </p>
       </div>
 
       <section className="w-full py-12 lg:py-16">
@@ -45,10 +45,20 @@ Experience the authentic taste of India & Nepal through our
                   {testimonial.text}
                 </p>
                 <div className="flex items-center mt-auto">
-                  <img
+                  <Image
                     src={testimonial.img}
+                       alt={testimonial.text}
+
+  
+                    width={48}
+                    height={48}
                     className="h-12 w-12 object-cover rounded-full border-3 border-[#d4b"
                   />
+
+
+
+
+
                   <div className="text-right">
                     <h2 className="text-lg font-bold text-[#8B4513]">
                       {testimonial.name}

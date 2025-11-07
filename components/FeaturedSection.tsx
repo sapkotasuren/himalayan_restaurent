@@ -30,14 +30,15 @@ const FeaturedSection = () => {
             </div>
             <div className="relative z-10 flex flex-col gap-y-4">
               <h1 className="text-2xl md:text-4xl font-bold text-yellow-300">
-                (Reservation)
+                            Reserveringen 
+
               </h1>
               <h1 className="text-2xl md:text-4xl font-bold text-white">
-                Events & Functions
+& Feestjes
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
               <p className="text-base md:text-xl text-white leading-relaxed">
-                Reservations available for birthdays, private parties, group dining, catering, and family celebrations.
+Je kan bij ons reserveren voor verjaardagen, privéfeestjes, groepsdiners, catering of familiebijeenkomsten. Wij zorgen ervoor dat het gezellig, lekker en helemaal op maat is.
               </p>
             </div>
           </div>
@@ -48,7 +49,7 @@ const FeaturedSection = () => {
           <div className="relative w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-20 min-h-[50vh] md:h-full">
             <div className="absolute inset-0 w-full h-full">
               <Image
-                src="/hero.jpg"
+                src="/food.jpg"
                 alt="Background"
                 layout="fill"
                 objectFit="cover"
@@ -59,13 +60,13 @@ const FeaturedSection = () => {
             <div className="relative z-10 flex flex-col gap-y-4">
               <h1 className="text-2xl md:text-4xl font-bold text-yellow-300"></h1>
               <h1 className="text-2xl md:text-4xl font-bold text-white">
-                Authentic Indian & Nepali Cuisines
+Thali – Een stukje Nepal op je bord
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
               <p className="text-base md:text-xl text-white leading-relaxed">
-                Experience the rich flavors of Indian and Nepali cuisine,
-                perfect for private parties, group events, catering, and family
-                gatherings.
+               In ons menu noemen we het Thali, maar het is eigenlijk de klassieke Dal Bhat in een feestelijke variant. Je krijgt een prachtig opgemaakte schaal met meer dan vijf kleine potjes vol verschillende gerechten, van linzen en curry tot groenten en chutneys. Daarbij serveren we vers naanbrood om alles mee op te scheppen.<br/>
+Elke Thali is een ontdekkingsreis van smaken en kleuren – een perfecte manier om verschillende gerechten in één keer te proeven en echt het hart van de Nepalese keuken te ervaren.
+
               </p>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import { Facebook,Instagram, Mail, MapPin, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+
 
 const Footer = () => {
   return (
@@ -71,6 +73,8 @@ himalayagent@gmail.com              </a>
 
         {/* Logo & Social Media */}
         <div className="flex flex-col items-center border-gray-200 pt-16">
+                <Link href="/">
+
           <Image
             src="/himalayan_logo.jpeg"
             height={180}
@@ -78,6 +82,11 @@ himalayagent@gmail.com              </a>
             alt="Himalayan Logo"
             className="mb-8"
           />
+                </Link>
+
+
+
+
 
           {/* Social Media Links */}
           <div className="flex gap-8 mb-8">

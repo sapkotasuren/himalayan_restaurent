@@ -18,9 +18,9 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-x-8 text-xl">
   <li>
- <Link href="/" className={`${pathname == "/" ? "text-[#d4b78f]" : ""}`}>
+ {/* <Link href="/" className={`${pathname == "/" ? "text-[#d4b78f]" : ""}`}>
            Home
-   </Link>
+   </Link> */}
      </li>
   <li>
                 <Link href="/about" className={`${pathname == "/about" ? "text-[#d4b78f]" : ""}`}>
@@ -37,7 +37,8 @@ const Navbar = () => {
             </ul>
 
             <Link href="/">
-              <Image src="/himalayan_logo.png" height={220} width={250} alt="Himalayan Logo" />
+              <Image   className="rounded-full object-cover"
+ src="/himalayan_logo.jpeg" height={220} width={250} alt="Himalayan Logo" />
             </Link>
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-x-10 text-xl">
@@ -47,11 +48,11 @@ const Navbar = () => {
                   Reservation
                 </Link>
               </li>
- <li>
+ {/* <li>
                 <Link href="/contact" className={`${pathname == "/contact" ? "text-[#d4b78f]" : ""}`}>
                   Contact
                 </Link>
-              </li>
+              </li> */}
 
             
               <li>
