@@ -98,21 +98,21 @@ Over ons
                 </h1>
                 <div className="h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
               </div>
-    <p className="text-gray-700 text-lg leading-relaxed">
+<p className="text-gray-700 text-lg leading-relaxed text-justify">
      Welkom bij Himalaya Restaurant in het hart van Gent! Hier komen de smaken, kleuren en geuren van Nepal en India samen in een warme en gezellige sfeer.
      </p>
-         <p className="text-gray-700 text-lg leading-relaxed">
+<p className="text-gray-700 text-lg leading-relaxed text-justify">
 
      Vanaf het begin verwelkomen we iedereen met aandacht. Of je nu zin hebt in onze subtiel gekruide Nepalese momo’s en sizzlers, of in de rijke, geurige curries uit India, je proeft altijd passie in elk gerecht.
      </p>
-    <p className="text-gray-700 text-lg leading-relaxed">
+<p className="text-gray-700 text-lg leading-relaxed text-justify">
 
      Ons interieur brengt een stukje Nepal naar Gent. Schilderijen tonen de seizoenen, bergen en specerijen. En onze bar? Die is echt speciaal: met de hand gemaakt door Nepalese ambachtslieden uit de Ghinder-gemeenschap, prachtig bewerkt hout en traditioneel design. Hier in het restaurant gemonteerd, en zeker een stukje Nepal dat je moet komen zien.
 
 Of je nu komt voor een rustig diner met z’n tweeën of een gezellige avond met vrienden en familie, bij ons ben je altijd welkom. Laat je verrassen door onze gerechten, onze gastvrijheid en de liefde waarmee we elke dag koken.
               </p>
               
-              <p className="text-gray-700 text-lg leading-relaxed">
+<p className="text-gray-700 text-lg leading-relaxed text-justify">
               We kunnen niet wachten om je te verwelkomen – laat je smaakavontuur beginnen!
               </p>
             </div>
@@ -128,8 +128,9 @@ Of je nu komt voor een rustig diner met z’n tweeën of een gezellige avond met
                 <div className="h-1 w-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
               </div>
               
-              <p className="text-gray-700 text-lg leading-relaxed">
- At Himalaya Restaurant, we believe that every dish is an individual masterpiece. Each meal is slow-cooked over gentle heat, allowing our carefully selected spices to blend harmoniously and develop their own distinctive character. Our commitment goes beyond exceptional food , we strive to deliver warm hospitality and attentive service, ensuring that every dining experience is truly memorable and fulfilling.
+<p className="text-gray-700 text-lg leading-relaxed text-justify">
+ Bij Himalaya Restaurant geloven we dat elk gerecht een uniek meesterwerk is. Elk gerecht wordt langzaam gegaard op een zacht vuur, waardoor onze zorgvuldig geselecteerde kruiden harmonieus samensmelten en hun eigen karakter ontwikkelen. Onze toewijding gaat verder dan alleen uitzonderlijk eten: we streven naar warme gastvrijheid en attente service, zodat elke eetervaring onvergetelijk en bevredigend is.
+
               </p>
             </div>
             

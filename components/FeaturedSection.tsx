@@ -37,7 +37,7 @@ const FeaturedSection = () => {
 & Feestjes
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
-              <p className="text-base md:text-xl text-white leading-relaxed">
+              <p className="text-base md:text-xl text-white leading-relaxed text-justify">
 Je kan bij ons reserveren voor verjaardagen, privéfeestjes, groepsdiners, catering of familiebijeenkomsten. Wij zorgen ervoor dat het gezellig, lekker en helemaal op maat is.
               </p>
             </div>
@@ -63,7 +63,7 @@ Je kan bij ons reserveren voor verjaardagen, privéfeestjes, groepsdiners, cater
 Thali – Een stukje Nepal op je bord
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
-              <p className="text-base md:text-xl text-white leading-relaxed">
+              <p className="text-base md:text-xl text-white leading-relaxed text-justify">
                In ons menu noemen we het Thali, maar het is eigenlijk de klassieke Dal Bhat in een feestelijke variant. Je krijgt een prachtig opgemaakte schaal met meer dan vijf kleine potjes vol verschillende gerechten, van linzen en curry tot groenten en chutneys. Daarbij serveren we vers naanbrood om alles mee op te scheppen.<br/>
 Elke Thali is een ontdekkingsreis van smaken en kleuren – een perfecte manier om verschillende gerechten in één keer te proeven en echt het hart van de Nepalese keuken te ervaren.
 

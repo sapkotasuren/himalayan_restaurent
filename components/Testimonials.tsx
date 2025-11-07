@@ -41,7 +41,7 @@ Ervaar de authentieke smaken van India & Nepal door de woorden van onze gasten. 
                 className="relative flex flex-col justify-between p-6 bg-white rounded-xl shadow-md duration-500 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#d4b78f] overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#d4b78f] to-amber-300 opacity-10 rounded-bl-full"></div>
-                <p className="text-[#4A4A4A] text-left leading-snug italic mb-6 pr-2">
+                <p className="text-[#4A4A4A] leading-snug text-justify mb-6 pr-2">
                   {testimonial.text}
                 </p>
                 <div className="flex items-center mt-auto">
