@@ -192,7 +192,7 @@ Of je nu komt voor een rustig diner met z’n tweeën of een gezellige avond met
     src={feature.image}
     alt={feature.title}
     fill
-    className="object-contain p-4"
+  className="object-cover"
   />
 </div>
 

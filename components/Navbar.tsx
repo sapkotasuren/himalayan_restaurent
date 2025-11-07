@@ -12,124 +12,149 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-transparent absolute top-0 z-10 h-32 px-6 md:px-0">
-        <div className="w-full max-w-screen-sm h-full mx-auto">
-          <div className="w-full flex justify-between items-center h-full text-white">
-            {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-x-8 text-xl">
-  <li>
- {/* <Link href="/" className={`${pathname == "/" ? "text-[#d4b78f]" : ""}`}>
-           Home
-   </Link> */}
-     </li>
-  <li>
-                <Link href="/about" className={`${pathname == "/about" ? "text-[#d4b78f]" : ""}`}>
-                  About
-                </Link>
-              </li>
-              
-             
-              <li>
-                <Link href="/menu" className={`${pathname == "/menu" ? "text-[#d4b78f]" : ""}`}>
-                  Menu
-                </Link>
-              </li>
-            </ul>
+      <nav className="w-full bg-gradient-to-b from-transparent/10 to-black/1 absolute top-0 z-10 h-32 px-6 md:px-12 ">
+        <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center h-full text-white">
+          
+          <Link href="/">
+            <Image
+              src="/himalayan_logo.jpeg"
+              height={180}
+              width={180}
+              alt="Himalayan Logo"
+              className="object-cover rounded-full drop-shadow-lg hover:drop-shadow-xl transition-shadow duration-300"
+            />
+          </Link>
 
-            <Link href="/">
-              <Image   className="rounded-full object-cover"
- src="/himalayan_logo.jpeg" height={220} width={250} alt="Himalayan Logo" />
-            </Link>
-            {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-x-10 text-xl">
+          <ul className="hidden md:flex gap-x-10 text-xl">
+            <li>
+              <Link 
+                href="/about" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/about" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/menu" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/menu" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/reservation" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/reservation" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                Reservation
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/contact" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/contact" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/gallery" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/gallery" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                Gallery
+              </Link>
+            </li>
+          </ul>
 
-<li>
-                <Link href="/reservation" className={`${pathname == "/reservation" ? "text-[#d4b78f]" : ""}`}>
-                  Reservation
-                </Link>
-              </li>
- {/* <li>
-                <Link href="/contact" className={`${pathname == "/contact" ? "text-[#d4b78f]" : ""}`}>
-                  Contact
-                </Link>
-              </li> */}
-
-            
-              <li>
-                <Link href="/gallery" className={`${pathname == "/gallery" ? "text-[#d4b78f]" : ""}`}>
-                  Gallery
-                </Link>
-              </li>
-            </ul>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X className="h-8 w-8" /> : <Menu />}
-            </div>
+          {/* Mobile Menu Button */}
+          <div className="md:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="h-8 w-8 transition-transform duration-300 hover:scale-110" /> : <Menu className="h-8 w-8 transition-transform duration-300 hover:scale-110" />}
           </div>
         </div>
       </nav>
 
-      {/* Mobile Menu - Moved outside the nav to avoid stacking context issues */}
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/30 z-[9998] md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu */}
       <div
-        className={`fixed z-[9999] top-0 right-0 h-full w-64 bg-[#faf7f2] text-black p-6 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed z-[9999] top-0 right-0 h-full w-64 bg-[#faf7f2]/95 backdrop-blur-sm text-black p-6 transform transition-transform duration-500 ease-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-end">
-          <X onClick={() => setIsOpen(false)} className="cursor-pointer" />
+        <div className="flex justify-end mb-8">
+          <X onClick={() => setIsOpen(false)} className="cursor-pointer h-6 w-6 text-gray-600 hover:text-black transition-colors duration-300" />
         </div>
-        <ul className="flex flex-col gap-y-4 text-2xl mt-6">
+        <ul className="flex flex-col gap-y-8 text-2xl">
+          
           <li>
-            <Link href="/" onClick={() => setIsOpen(false)} className={`${pathname == "/" ? "text-[#d4b78f]" : ""}`}>
-              Home
+            <Link 
+              href="/about" 
+              onClick={() => setIsOpen(false)} 
+              className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+                pathname == "/about" ? "text-[#d4b78f] font-bold" : ""
+              }`}
+            >
+              About
             </Link>
           </li>
           <li>
-            <Link
-              href="/menu"
-              onClick={() => setIsOpen(false)}
-              className={`${pathname == "/menu" ? "text-[#d4b78f]" : ""}`}
+            <Link 
+              href="/menu" 
+              onClick={() => setIsOpen(false)} 
+              className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+                pathname == "/menu" ? "text-[#d4b78f] font-bold" : ""
+              }`}
             >
               Menu
             </Link>
           </li>
           <li>
-            <Link
-              href="/about"
-              onClick={() => setIsOpen(false)}
-              className={`${pathname == "/about" ? "text-[#d4b78f]" : ""}`}
-            >
-              About
-            </Link>
-          </li>
-
-
- <li>
-            <Link
-              href="/reservation"
-              onClick={() => setIsOpen(false)}
-              className={`${pathname == "/reservation" ? "text-[#d4b78f]" : ""}`}
+            <Link 
+              href="/reservation" 
+              onClick={() => setIsOpen(false)} 
+              className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+                pathname == "/reservation" ? "text-[#d4b78f] font-bold" : ""
+              }`}
             >
               Reservation
             </Link>
           </li>
-
-
           <li>
-            <Link
-              href="/contact"
-              onClick={() => setIsOpen(false)}
-              className={`${pathname == "/contact" ? "text-[#d4b78f]" : ""}`}
+            <Link 
+              href="/contact" 
+              onClick={() => setIsOpen(false)} 
+              className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+                pathname == "/contact" ? "text-[#d4b78f] font-bold" : ""
+              }`}
             >
               Contact
             </Link>
           </li>
           <li>
-            <Link
-              href="/gallery"
-              onClick={() => setIsOpen(false)}
-              className={`${pathname == "/gallery" ? "text-[#d4b78f]" : ""}`}
+            <Link 
+              href="/gallery" 
+              onClick={() => setIsOpen(false)} 
+              className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+                pathname == "/gallery" ? "text-[#d4b78f] font-bold" : ""
+              }`}
             >
               Gallery
             </Link>
@@ -141,4 +166,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

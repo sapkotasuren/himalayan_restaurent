@@ -64,15 +64,23 @@ const Features = () => {
               key={index}
               className="flex flex-col items-center p-10 border-2 border-[#d4b78f] rounded-lg duration-300 hover:shadow-lg"
             >
-              <div className="mb-6 transform hover:scale-105 transition-transform duration-300">
-                <Image
-                  src={feature.image}
-                  alt={feature.title}
-                  width={140}
-                  height={140}
-                  className="object-contain"
-                />
-              </div>
+              
+
+
+<div className="mb-6 w-[140px] h-[140px] flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+  <Image
+    src={feature.image}
+    alt={feature.title}
+    width={140}
+    height={140}
+    className="object-contain"
+  />
+</div>
+
+
+
+
+
 
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 {feature.title}
