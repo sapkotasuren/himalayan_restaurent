@@ -15,7 +15,7 @@ const Contact = () => {
             fill
             priority
             className="object-cover"
-            alt="Rajdoot restaurant ambiance"
+            alt="Himalaya restaurant ambiance"
           />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>

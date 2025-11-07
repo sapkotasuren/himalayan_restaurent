@@ -73,7 +73,7 @@ export default function ReservationPage() {
             fill
             priority
             className="object-cover"
-            alt="Rajdoot restaurant ambiance"
+            alt="Himalaya restaurant ambiance"
             sizes="(max-width: 768px) 100vw, 100vw"
           />
           <div className="absolute inset-0 bg-black/70"></div>

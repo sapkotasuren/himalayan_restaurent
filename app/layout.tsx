@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_HK",
-    url: "https://www.rajdoot.com.hk",
+    url: "https://himalayarestaurant.be/",
     title: "Himalayan Indian & Nepali Cuisine + Bar | Belgium",
     description:
-      "Authentic Indian and Nepali cuisine in the heart of Belgium. Visit Rajdoot for a culinary journey through traditional flavors and dishes.",
+      "Authentic Indian and Nepali cuisine in the heart of Belgium. Visit Himalaya for a culinary journey through traditional flavors and dishes.",
     siteName: "Himalayan Restaurant",
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.rajdoot.com.hk",
+    canonical: "https://himalayarestaurant.be/",
   },
   robots: {
     index: true,
@@ -92,10 +92,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Restaurant",
-              name: "Rajdoot Indian & Nepali Cuisine + Bar",
-              image: "https://www.rajdoot.com.hk/rajdootlogo.png",
-              url: "https://www.rajdoot.com.hk",
-              telephone: "+85228030095",
+              name: "Himalaya Restaurant",
+              image: "https://himalayarestaurant.be/himalayanlogo.png",
+              url: "https://himalayarestaurant.be/",
+              telephone: "+32486918529",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Oudburg 9000 Gent, Belgium",
