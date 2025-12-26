@@ -30,15 +30,19 @@ const FeaturedSection = () => {
             </div>
             <div className="relative z-10 flex flex-col gap-y-4">
               <h1 className="text-2xl md:text-4xl font-bold text-yellow-300">
-                            Reserveringen 
-
+                Reserveringen, Events, Buffet
               </h1>
               <h1 className="text-2xl md:text-4xl font-bold text-white">
-& Feestjes
+                & Feestjes
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
               <p className="text-base md:text-xl text-white leading-relaxed text-justify">
-Je kan bij ons reserveren voor verjaardagen, privéfeestjes, groepsdiners, catering of familiebijeenkomsten. Wij zorgen ervoor dat het gezellig, lekker en helemaal op maat is.
+                Bij ons kan je terecht voor verjaardagen, privéfeestjes,
+                groepsdiners, catering of familiebijeenkomsten. Wij zorgen
+                ervoor dat het gezellig, lekker en helemaal op maat is. Voor
+                alle gelegenheden kan je ons mailen of bellen voor meer
+                informatie. We helpen je graag om jouw evenement onvergetelijk
+                te maken!
               </p>
             </div>
           </div>
@@ -60,13 +64,20 @@ Je kan bij ons reserveren voor verjaardagen, privéfeestjes, groepsdiners, cater
             <div className="relative z-10 flex flex-col gap-y-4">
               <h1 className="text-2xl md:text-4xl font-bold text-yellow-300"></h1>
               <h1 className="text-2xl md:text-4xl font-bold text-white">
-Thali – Een stukje Nepal op je bord
+                Thali – Een stukje Nepal op je bord
               </h1>
               <div className="bg-yellow-300 h-1 md:h-2 w-20 md:w-24"></div>
               <p className="text-base md:text-xl text-white leading-relaxed text-justify">
-               In ons menu noemen we het Thali, maar het is eigenlijk de klassieke Dal Bhat in een feestelijke variant. Je krijgt een prachtig opgemaakte schaal met meer dan vijf kleine potjes vol verschillende gerechten, van linzen en curry tot groenten en chutneys. Daarbij serveren we vers naanbrood om alles mee op te scheppen.<br/>
-Elke Thali is een ontdekkingsreis van smaken en kleuren – een perfecte manier om verschillende gerechten in één keer te proeven en echt het hart van de Nepalese keuken te ervaren.
-
+                In ons menu noemen we het Thali, maar het is eigenlijk de
+                klassieke Dal Bhat in een feestelijke variant. Je krijgt een
+                prachtig opgemaakte schaal met meer dan vijf kleine potjes vol
+                verschillende gerechten, van linzen en curry tot groenten en
+                chutneys. Daarbij serveren we vers naanbrood om alles mee op te
+                scheppen.
+                <br />
+                Elke Thali is een ontdekkingsreis van smaken en kleuren – een
+                perfecte manier om verschillende gerechten in één keer te
+                proeven en echt het hart van de Nepalese keuken te ervaren.
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { Mail, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const Contact = () => {
+const ReservationPage = () => {
   return (
     <div className="min-h-screen w-full">
       <Navbar />
@@ -27,9 +27,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* section */}
-
-      <section className="w-full max-w-screen-xl mx-auto px-4 pt-16">
+      <section className="w-full max-w-screen-xl mx-auto px-4 pt-16 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Opening Time */}
           <div className="group bg-white p-8 border border-[#d4b78f] hover:border-[#8c6d46] transition-colors duration-300">
@@ -57,7 +55,9 @@ const Contact = () => {
             </h3>
 
             <div className="border-t border-[#d4b78f] pt-4">
-              <h4 className="font-serif text-[#513c28] text-lg mb-4"></h4>
+              <h4 className="font-serif text-[#513c28] text-lg mb-4">
+                Get in Touch
+              </h4>
               <div className="space-y-4">
                 <a
                   href="tel:+32 9 233 21 37"
@@ -67,7 +67,7 @@ const Contact = () => {
                   +32 9 233 21 37
                 </a>
                 <a
-                  href="Tel: +32 9 233 21 37"
+                  href="tel:+32 486 91 85 29"
                   className="text-[#776552] flex items-center gap-x-3 hover:text-[#8c6d46] transition-colors duration-300"
                 >
                   <PhoneCall className="h-4 w-4" />
@@ -87,10 +87,12 @@ const Contact = () => {
           {/* Location */}
           <div className="group bg-white p-8 border border-[#d4b78f] hover:border-[#8c6d46] transition-colors duration-300">
             <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider mb-4">
-              Adres
+              Location
             </h3>
             <div className="border-t border-[#d4b78f] pt-4">
-              <h4 className="font-serif text-[#513c28] text-lg mb-2"></h4>
+              <h4 className="font-serif text-[#513c28] text-lg mb-2">
+                Restaurant Address
+              </h4>
               <div className="text-[#776552] space-y-1">
                 <p className="font-medium">Oudburg 1 9000 Gent, Belgium</p>
                 <p>Onderneming nr:</p>
@@ -98,31 +100,23 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Booking Request */}
-          <div className="group bg-white p-8 border border-[#d4b78f] hover:border-[#8c6d46] transition-colors duration-300">
-            <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider mb-4">
+          {/* Booking Request - Table Agent Embedded */}
+          <div className="group bg-white p-4 border border-[#d4b78f] hover:border-[#8c6d46] transition-colors duration-300 flex flex-col">
+            <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider mb-4 px-4 pt-4">
               Reservatie
             </h3>
-            <div className="border-t border-[#d4b78f] pt-4">
-              <h4 className="font-serif text-[#513c28] text-lg mb-2">
-                Reserveer een tafel:
-              </h4>
-              <div className="text-[#776552] space-y-2">
-                <a
-                  href="tel:+32 486 91 85 29"
-                  className="text-[#776552] flex items-center gap-x-3 hover:text-[#8c6d46] transition-colors duration-300"
-                >
-                  <PhoneCall className="h-5 w-5" />
-                  +32 486 91 85 29
-                </a>
-                <a
-                  href="tel:+32 9 233 21 37"
-                  className="text-[#776552] flex items-center justify-center lg:justify-normal gap-x-2"
-                >
-                  <PhoneCall className="h-5 w-5" />
-                  +32 9 233 21 37
-                </a>
-              </div>
+            <div className="border-t border-[#d4b78f] flex-grow">
+              <iframe
+                src="https://tableagent.com/iframe/himalaya-restaurant/"
+                style={{
+                  border: "0px none",
+                  minWidth: "100%",
+                  minHeight: "736px",
+                }}
+                sandbox="allow-forms allow-modals allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                width="100%"
+                height="100%"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -131,4 +125,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ReservationPage;

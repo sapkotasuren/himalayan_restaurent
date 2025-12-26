@@ -95,25 +95,19 @@ export default function RootLayout({
               name: "Himalaya Restaurant",
               image: "https://himalayarestaurant.be/himalayanlogo.png",
               url: "https://himalayarestaurant.be/",
-              telephone: "+32486918529",
+              mobile: "+32486918529",
+              telephone: "+32 9 233 21 37",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Oudburg 9000 Gent, Belgium",
                 addressLocality: "belgium",
                 postalCode: "",
-                addressCountry: "HK",
-
-
-
-
-
-
-
+                addressCountry: "be",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 22.2799, // Replace with actual coordinates
-                longitude: 114.1722, // Replace with actual coordinates
+                latitude: 51.0579,
+                longitude: 3.7238, // Replace with actual coordinates
               },
               servesCuisine: ["Indian", "Nepali"],
               priceRange: "$$",

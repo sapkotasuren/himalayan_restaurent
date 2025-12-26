@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
@@ -11,7 +11,7 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    setModalOpen(true); // Open modal on page load
+    setModalOpen(false); // Open modal on page load
   }, []);
 
   const closeModal = () => setModalOpen(false);
@@ -20,9 +20,8 @@ const Hero = () => {
   //   window.open("/menu.pdf", "_blank");
   // };
   const openMenuPDF = () => {
-  window.location.href = "/menu.pdf"; 
-};
-
+    window.location.href = "/menu.pdf";
+  };
 
   return (
     <>
@@ -49,21 +48,22 @@ const Hero = () => {
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400"></div>
             <span className="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">
-Premium dineren
+              Himalayan Gent
             </span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center leading-tight tracking-tight">
-            Delight in Authentic Indian and{" "}
+            Geniet van authentieke{" "}
             <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-              Nepalese Cuisine, <br />
+              Indiase en Nepalese smaken, <br />
             </span>{" "}
-            Right Here in Belgium
+            hier in Gent.
           </h1>
 
           <p className="text-lg sm:text-xl text-center max-w-2xl leading-relaxed italic text-gray-200 font-light">
-            A place where each dish is crafted into a masterpiece, ready to delight your taste buds.
+            Een plek waar elk gerecht met liefde wordt gemaakt en je
+            smaakpapillen blij maakt.
           </p>
 
           {/* Buttons */}
@@ -79,7 +79,7 @@ Premium dineren
             <Link href="/reservation">
               <button className="group relative px-8 py-4 text-lg font-medium border-2 border-white/50 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-amber-400 hover:bg-amber-400/10">
                 <span className="relative z-10 group-hover:text-amber-400 transition-colors duration-300">
-                  Book a Seat
+                  Reserveer een tafel
                 </span>
               </button>
             </Link>
@@ -90,7 +90,9 @@ Premium dineren
             className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce"
             style={{ animationDuration: "2s" }}
           >
-            <span className="text-xs tracking-widest text-gray-400 uppercase">Scroll</span>
+            <span className="text-xs tracking-widest text-gray-400 uppercase">
+              Scroll
+            </span>
             <div className="w-px h-12 bg-gradient-to-b from-amber-400 to-transparent"></div>
           </div>
         </div>
