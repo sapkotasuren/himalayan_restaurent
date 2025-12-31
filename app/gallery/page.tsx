@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 const foodItems = [
-  // { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
+  { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
  
 ];
 

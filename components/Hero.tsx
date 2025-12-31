@@ -11,27 +11,15 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-<<<<<<< HEAD
     setModalOpen(true); 
-=======
-    setModalOpen(false); // Open modal on page load
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
   }, []);
 
   const closeModal = () => setModalOpen(false);
 
   const openMenuPDF = () => {
-<<<<<<< HEAD
     window.open("/menu.pdf", "_blank");
   };
-//   const openMenuPDF = () => {
-//   window.location.href = "/menu.pdf"; 
-// };
 
-=======
-    window.location.href = "/menu.pdf";
-  };
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
 
   return (
     <>

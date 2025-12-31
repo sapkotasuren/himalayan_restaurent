@@ -7,26 +7,7 @@ import "aos/dist/aos.css";
 
 import Navbar from "@/components/Navbar";
 
-const features = [
-  {
-    image: "/features1.png",
-    title: "Authentieke smaken",
-    description:
-      "Proef de echte Nepalese en Indiase keuken, met verse ingrediënten en passie in elk gerecht",
-  },
-  {
-    image: "/features2.png",
-    title: "Gastvrij en gezellig",
-    description:
-      "Of je komt voor een intiem diner of een avond met vrienden, bij ons voel je je altijd welkom.",
-  },
-  {
-    image: "/features3.png",
-    title: "Waar voor je geld",
-    description:
-      "Heerlijke porties, hoge kwaliteit en eerlijke prijzen maken elke maaltijd een feestje.",
-  },
-];
+
 
 const vibes = Array.from({ length: 5 }, (_, i) => i + 1);
 
@@ -45,12 +26,7 @@ const About = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#faf7f2] to-white">
       <Navbar />
-<<<<<<< HEAD
-      
-=======
 
-      {/* Hero Section */}
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
       <section className="relative min-h-[40vh] lg:min-h-[60vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -66,13 +42,8 @@ const About = () => {
         <div className="relative mx-auto max-w-screen-lg w-full h-full min-h-[40vh] lg:min-h-[60vh] flex flex-col justify-center items-center text-white text-center px-4">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-<<<<<<< HEAD
-Over Ons          
-   </h1>
-=======
               Over ons
             </h1>
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto"></div>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
               Ontdek de beste Indiase en Nepalese keuken in België.

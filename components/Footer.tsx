@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   Facebook,
   Instagram,
@@ -6,9 +5,6 @@ import {
   MapPin,
   PhoneCall,
 } from "lucide-react";
-=======
-import { Facebook, Instagram, Mail, MapPin, PhoneCall } from "lucide-react";
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -16,7 +12,6 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full py-16">
-<<<<<<< HEAD
       <div className="w-full max-w-screen-xl mx-auto mb-20 rounded-lg h-[450px] px-6">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.738191240358!2d3.721216776525122!3d51.057921843439765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371389b42eba1%3A0x2e34032056547960!2sOudburg%201%2C%209000%20Gent%2C%20Belgium!5e0!3m2!1sen!2snp!4v1762408634989!5m2!1sen!2snp"
@@ -24,25 +19,9 @@ const Footer = () => {
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full rounded-lg border-0"
         />
-=======
-      <div className="mt-12 w-full max-w-screen-xl mx-auto my-20 rounded-lg h-[450px]">
-        <div className="mt-12 w-full max-w-screen-xl mx-auto my-20 rounded-lg h-[450px]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.738191240358!2d3.721216776525122!3d51.057921843439765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371389b42eba1%3A0x2e34032056547960!2sOudburg%201%2C%209000%20Gent%2C%20Belgium!5e0!3m2!1sen!2snp!4v1762408634989!5m2!1sen!2snp"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-full rounded-lg"
-          ></iframe>
-        </div>
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
       </div>
 
       <div className="max-w-screen-lg mx-auto px-6">
-<<<<<<< HEAD
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
           
           <div>
@@ -86,38 +65,20 @@ const Footer = () => {
           </div>
 
           <div>
-=======
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 mt-4 text-center md:text-left">
-          <div className="flex flex-col space-y-1">
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
             <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider">
               Openingsuur
             </h3>
-<<<<<<< HEAD
-            <div className="border-t border-[#d4b78f] pt-3 mt-2">
-              <p className="text-[#513c28] font-serif">12:00 – 14:30</p>
-              <p className="text-[#513c28] font-serif">17:30 – 22:30</p>
-=======
             <div className="border-t border-[#d4b78f] pt-2 mt-1">
               <h4 className="font-serif text-[#513c28]">
                 Wij zijn elke dag open van:
               </h4>
               <p className="text-[#776552]">12:00 - 14:30</p>
               <p className="text-[#776552]">17:00 - 22:30</p>
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
             </div>
           </div>
 
           <div>
             <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider">
-<<<<<<< HEAD
-              Contact
-            </h3>
-            <div className="border-t border-[#d4b78f] pt-3 mt-2 space-y-2">
-              <a
-                href="tel:+32486918529"
-                className="text-[#776552] flex items-center justify-center md:justify-start gap-2"
-=======
               Contacteer ons
             </h3>
             <div className="border-t border-[#d4b78f] pt-2 mt-1">
@@ -132,7 +93,6 @@ const Footer = () => {
               <a
                 href="tel:+32 486 91 85 29"
                 className="text-[#776552] flex items-center justify-center lg:justify-normal gap-x-2"
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
               >
                 <PhoneCall className="h-5 w-5" />
                 +32 486 91 85 29
@@ -142,11 +102,7 @@ const Footer = () => {
                 className="text-[#776552] flex items-center justify-center md:justify-start gap-2"
               >
                 <Mail className="h-5 w-5" />
-<<<<<<< HEAD
-                himalayagent@gmail.com
-=======
                 himalayagent@gmail.com{" "}
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
               </a>
             </div>
           </div>
@@ -155,28 +111,16 @@ const Footer = () => {
             <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider">
               Adres
             </h3>
-<<<<<<< HEAD
-            <div className="border-t border-[#d4b78f] pt-3 mt-2">
-              <p className="text-[#513c28] font-serif">
-                Oudburg 1, 9000 Gent
-              </p>
-=======
             <div className="border-t border-[#d4b78f] pt-2 mt-1">
               <h4 className="font-serif text-[#513c28]">
                 Oudburg 1, 9000 Gent{" "}
               </h4>
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
               <p className="text-[#776552]">Belgium</p>
             </div>
           </div>
         </div>
 
-<<<<<<< HEAD
         <div className="flex flex-col items-center pt-16">
-=======
-        {/* Logo & Social Media */}
-        <div className="flex flex-col items-center border-gray-200 pt-16">
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
           <Link href="/">
             <Image
               src="/himalayan_logo.jpeg"
@@ -187,19 +131,8 @@ const Footer = () => {
             />
           </Link>
 
-<<<<<<< HEAD
           <div className="flex gap-8 mb-8 text-[#3B1C32]">
             <a href="/" target="_blank">
-=======
-          {/* Social Media Links */}
-          <div className="flex gap-8 mb-8">
-            <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" transition"
-            >
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
               <Facebook className="h-7 w-7" />
             </a>
             <a href="/" target="_blank">
@@ -211,7 +144,6 @@ const Footer = () => {
             >
               <MapPin className="h-7 w-7" />
             </a>
-<<<<<<< HEAD
           </div>
 
           <p className="text-sm text-gray-600 text-center">
@@ -227,15 +159,6 @@ const Footer = () => {
                 SquareLabs
               </a>
             </span>
-=======
-            <a href="" target="_blank" rel="noopener noreferrer"></a>
-            <a href=""></a>
-          </div>
-
-          <p className="text-sm lg:text-base text-gray-500 text-center">
-            &copy; {new Date().getFullYear()} Himalayan Restaurent. All Rights
-            Reserved.
->>>>>>> c471e7040595a422856a43e691c653b55d8023c5
           </p>
         </div>
       </div>

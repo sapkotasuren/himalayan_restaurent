@@ -4,44 +4,6 @@ import React, { useState, useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import { Utensils, Leaf, Coffee, Wine, Sparkles, ChefHat, Star } from "lucide-react";
 
-const Foods = () => {
-  const [activeTab, setActiveTab] = useState("starters");
-
-  const tabs = [
-      { id: "all", 
-        label: "All", 
-        icon: Sparkles },
-  { id: "starters", 
-    label: "Starters", icon: Utensils },
-  { id: "recommendations",
-     label: "Chef's Specials",
-     icon: ChefHat },
-  { id: "main", 
-    label: "Main Course",
-     icon: Sparkles },
-  { id: "vegetarian",
-     label: "Vegetarian",
-     icon: Leaf },
-  { id: "kids", 
-    label: "Kids Menu",
-     icon: Star },
-  { id: "sides", 
-    label: "Sides",
-     icon: Utensils },
-  { id: "desserts",
-     label: "Desserts", 
-    icon: Sparkles },
-  { id: "tea", 
-    label: "Tea & Coffee", 
-    icon: Coffee },
-  { id: "soft", 
-    label: "Beverages",
-     icon: Wine },
-  { id: "beers", 
-    label: "Beers", 
-    icon: Wine },
-];
-
 const menuData = {
   starters: [
     { name: "Lentil Soup",
@@ -329,6 +291,46 @@ const menuData = {
     { name: "Old Dunbar 60ml", desc: "Nepali whisky", price: "€9.50", image: "/menu" }
   ]
 };
+
+const Foods = () => {
+  const [activeTab, setActiveTab] = useState("starters");
+
+  const tabs = [
+      { id: "all", 
+        label: "All", 
+        icon: Sparkles },
+  { id: "starters", 
+    label: "Starters", icon: Utensils },
+  { id: "recommendations",
+     label: "Chef's Specials",
+     icon: ChefHat },
+  { id: "main", 
+    label: "Main Course",
+     icon: Sparkles },
+  { id: "vegetarian",
+     label: "Vegetarian",
+     icon: Leaf },
+  { id: "kids", 
+    label: "Kids Menu",
+     icon: Star },
+  { id: "sides", 
+    label: "Sides",
+     icon: Utensils },
+  { id: "desserts",
+     label: "Desserts", 
+    icon: Sparkles },
+  { id: "tea", 
+    label: "Tea & Coffee", 
+    icon: Coffee },
+  { id: "soft", 
+    label: "Beverages",
+     icon: Wine },
+  { id: "beers", 
+    label: "Beers", 
+    icon: Wine },
+];
+
+
 
 const allItems = useMemo(() => {
     return Object.values(menuData)

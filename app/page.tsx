@@ -1,7 +1,7 @@
 import FeaturedSection from "@/components/FeaturedSection";
-import Features from "@/components/Features";
+// import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
