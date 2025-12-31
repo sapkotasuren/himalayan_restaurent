@@ -47,11 +47,10 @@ useEffect(() => {
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#faf7f2] to-white">
       <Navbar />
       
-      {/* Hero Section */}
       <section className="relative min-h-[40vh] lg:min-h-[60vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/1.jpeg"
+            src="/bg1.jpeg"
             fill
             priority
             className="object-cover"
@@ -63,7 +62,7 @@ useEffect(() => {
         <div className="relative mx-auto max-w-screen-lg w-full h-full min-h-[40vh] lg:min-h-[60vh] flex flex-col justify-center items-center text-white text-center px-4">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-Over ons          
+Over Ons          
    </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto"></div>
             <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
@@ -73,7 +72,6 @@ Over ons
         </div>
       </section>
 
-      {/* Content Section */}
       <section className="py-16 lg:py-24 px-4 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-100/30 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>

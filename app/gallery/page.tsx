@@ -3,30 +3,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 const foodItems = [
-  { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
-    { id: 3, src: "/foods/13.jpg", title: "Rice" },
-      { id: 4, src: "/foods/14.jpg", title: "Pulau" },
-{ id: 15, src: "/foods/15.jpg", title: "Desserts" },
-  { id: 16, src: "/foods/16.jpg", title: "Desserts" },
-  { id: 17, src: "/foods/17.jpg", title: "Palak Paneer" },
-  { id: 18, src: "/foods/18.jpg", title: "Food" },
-  { id: 19, src: "/foods/19.jpg", title: "Food" },
-  { id: 20, src: "/foods/20.jpg", title: "Food" },
-  // { id: 21, src: "/foods/21.jpg", title: "Food" },
-  { id: 1, src: "/foods/pizza.jpg", title: "Pizza" },
-
-  
-  // { id: 22, src: "/foods/22.jpg", title: "Food" },
-  // { id: 23, src: "/foods/23.jpg", title: "Food" },
-  { id: 24, src: "/foods/24.jpg", title: "Food" },
-  { id: 25, src: "/foods/25.jpg", title: "Food" },
-  { id: 26, src: "/foods/26.jpg", title: "Food" },
-  { id: 27, src: "/foods/27.jpg", title: "Food" },
-  { id: 28, src: "/foods/28.jpg", title: "Food" },
-  { id: 29, src: "/foods/29.jpg", title: "Food" },
-  { id: 30, src: "/foods/30.jpg", title: "Food" },
-  { id: 31, src: "/foods/31.jpg", title: "Food" },
-  { id: 32, src: "/foods/naan.jpg", title: "Butter naan" },
+  // { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
+ 
 ];
 
 const Gallery = () => {
@@ -34,11 +12,10 @@ const Gallery = () => {
     <div className="min-h-screen w-full">
       <Navbar />
 
-      {/* Hero Section */}
       <section className="relative min-h-[20vh] lg:min-h-[50vh] w-full">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/hero.jpg"
+            src="/hero.webp"
             fill
             priority
             className="object-cover"

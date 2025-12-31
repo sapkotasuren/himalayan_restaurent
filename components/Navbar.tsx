@@ -26,6 +26,16 @@ const Navbar = () => {
           </Link>
 
           <ul className="hidden md:flex gap-x-10 text-xl">
+             <li>
+              <Link 
+                href="/" 
+                className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
+                  pathname == "/about" ? "text-[#d4b78f] border-[#d4b78f] font-bold" : ""
+                }`}
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link 
                 href="/about" 

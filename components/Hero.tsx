@@ -11,17 +11,17 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    setModalOpen(true); // Open modal on page load
+    setModalOpen(true); 
   }, []);
 
   const closeModal = () => setModalOpen(false);
 
-  // const openMenuPDF = () => {
-  //   window.open("/menu.pdf", "_blank");
-  // };
   const openMenuPDF = () => {
-  window.location.href = "/menu.pdf"; 
-};
+    window.open("/menu.pdf", "_blank");
+  };
+//   const openMenuPDF = () => {
+//   window.location.href = "/menu.pdf"; 
+// };
 
 
   return (
