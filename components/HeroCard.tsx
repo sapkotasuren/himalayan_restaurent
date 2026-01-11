@@ -4,14 +4,7 @@ import React from "react";
 interface HeroCardProps {
   className?: string; // optional
 }
-// const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
-//   return (
-//     <section className="">
-//       <div className="hidden h-24 w-24 md:h-32 md:w-32 bg-[#d4b78f] absolute -top-10 -right-5 shadow-lg lg:flex justify-center items-center rounded-full hover:border-2 hover:border-green-500 hover:shadow-md hover:shadow-green-500 z-30">
-//         <Link href="/contact" className="text-white text-lg font-serif italic">
-//           Contact Us
-//         </Link>
-//       </div>
+
 
 
 const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
@@ -24,7 +17,7 @@ const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
     md:-mt-36
     z-10 md:z-20 ${className}`}
     >
-      <div className="hidden h-24 w-24 md:h-32 md:w-32 bg-[#d4b78f] absolute -top-10 -right-5 shadow-lg lg:flex justify-center items-center rounded-full hover:border-2 hover:border-green-500 hover:shadow-md hover:shadow-green-500 z-30">
+      <div className=" hidden h-24 w-24 md:h-32 md:w-32 bg-[#d4b78f] absolute -top-10 -right-5 shadow-lg lg:flex justify-center items-center rounded-full hover:border-2 hover:border-green-500 hover:shadow-md hover:shadow-green-500 z-30">
         <Link href="/contact" className="text-white text-lg font-serif italic">
           Contact Us
         </Link>

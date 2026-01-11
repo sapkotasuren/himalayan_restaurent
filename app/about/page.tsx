@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar";
 
 
 
-const vibes = Array.from({ length: 5 }, (_, i) => i + 1);
+const vibes = Array.from({ length: 6 }, (_, i) => i + 1);
 
 const About = () => {
   useEffect(() => {

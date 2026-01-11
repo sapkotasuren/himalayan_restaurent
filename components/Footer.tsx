@@ -82,7 +82,6 @@ const Footer = () => {
               Contacteer ons
             </h3>
             <div className="border-t border-[#d4b78f] pt-2 mt-1">
-              {/* <div className="flex flex-col sm:flex-row sm:items-center sm:gap-x-4 sm:justify-start justify-center items-center"> */}
               <a
                 href="tel:+32 9 233 21 37"
                 className="text-[#776552] flex items-center justify-center lg:justify-normal gap-x-2"
