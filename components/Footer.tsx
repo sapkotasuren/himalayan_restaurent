@@ -1,10 +1,4 @@
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  MapPin,
-  PhoneCall,
-} from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -23,7 +17,6 @@ const Footer = () => {
 
       <div className="max-w-screen-lg mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
-          
           <div>
             <h3 className="text-[#8c6d46] font-semibold uppercase text-sm tracking-wider">
               Quick Links
@@ -32,22 +25,17 @@ const Footer = () => {
               <Link href="/" className="text-[#776552] hover:text-[#3B1C32]">
                 Home
               </Link>
-              <Link href="/about" className="text-[#776552] hover:text-[#3B1C32]">
-                About
-              </Link>
-              <a
-                href="/menu.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/about"
                 className="text-[#776552] hover:text-[#3B1C32]"
               >
-                Menu
-              </a>
+                Over ons
+              </Link>
               <Link
                 href="/reservation"
                 className="text-[#776552] hover:text-[#3B1C32]"
               >
-                Reservations
+                Reservatie
               </Link>
               <Link
                 href="/contact"
@@ -59,7 +47,7 @@ const Footer = () => {
                 href="/gallery"
                 className="text-[#776552] hover:text-[#3B1C32]"
               >
-                Gallery
+                Gallerij
               </Link>
             </div>
           </div>
@@ -137,16 +125,14 @@ const Footer = () => {
             <a href="/" target="_blank">
               <Instagram className="h-7 w-7" />
             </a>
-            <a
-              href="https://maps.app.goo.gl/8sQFfNA8bW2zHDL79"
-              target="_blank"
-            >
+            <a href="https://maps.app.goo.gl/8sQFfNA8bW2zHDL79" target="_blank">
               <MapPin className="h-7 w-7" />
             </a>
           </div>
 
           <p className="text-sm text-gray-600 text-center">
-            &copy; {new Date().getFullYear()} Himalayan Restaurant. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Himalayan Restaurant. All Rights
+            Reserved.
             <br />
             <span>
               By{" "}
