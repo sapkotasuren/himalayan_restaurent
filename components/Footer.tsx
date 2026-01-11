@@ -134,16 +134,6 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Himalayan Restaurant. All Rights
             Reserved.
             <br />
-            <span>
-              By{" "}
-              <a
-                href="https://squarelabs.com.np/"
-                target="_blank"
-                className="hover:text-[#3B1C32]"
-              >
-                SquareLabs
-              </a>
-            </span>
           </p>
         </div>
       </div>
