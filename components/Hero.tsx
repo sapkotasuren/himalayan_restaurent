@@ -7,6 +7,7 @@ import HeroCard from "./HeroCard";
 import Link from "next/link";
 import WelcomeModal from "./WelcomeModal";
 
+
 const Hero = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -33,16 +34,20 @@ const Hero = () => {
             src="/ok1.jpeg"
             fill
             priority
-            className="hidden lg:block object-cover fixed"
+            className="block object-cover"
+
             alt="hero image"
           />
 
-          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/70 to-black/0"></div>
         </div>
 
-        {/* Hero content */}
-        <div className="relative h-screen w-full max-w-screen-lg mx-auto flex flex-col justify-center items-center text-white px-6 sm:px-8 py-24 gap-y-8">
+ 
+        {/* <div className="relative h-screen w-full max-w-screen-lg mx-auto flex flex-col justify-start sm:justify-center items-center text-white px-6 sm:px-8 py-28 sm:py-32 gap-y-8"> */}
+    <div className="relative w-full max-w-screen-lg mx-auto flex flex-col justify-start md:justify-center items-center text-white px-6 sm:px-8 py-28 sm:py-32 md:py-40 lg:py-48 min-h-[70vh] md:min-h-screen gap-y-8">
+
+
+
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400"></div>
             <span className="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">
@@ -64,18 +69,17 @@ const Hero = () => {
             smaakpapillen blij maakt.
           </p>
 
-          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <button
               onClick={openMenuPDF}
-              className="group relative px-8 py-4 text-lg font-medium border-2 border-amber-400 bg-amber-400 text-black overflow-hidden transition-all duration-300 hover:bg-transparent hover:text-white cursor-pointer"
+              className="group relative px-8 py-4 text-lg font-medium border-2 border-amber-400 bg-amber-400 text-black overflow-hidden transition-all duration-300 hover:bg-transparent hover:text-white cursor-pointer rounded-full"
             >
               <span className="relative z-10">Menu</span>
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
 
             <Link href="/reservation">
-              <button className="group relative px-8 py-4 text-lg font-medium border-2 border-white/50 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-amber-400 hover:bg-amber-400/10">
+              <button className="group relative px-8 py-4 text-lg font-medium border-2 border-white/50 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-amber-400 hover:bg-amber-400/10 rounded-full">
                 <span className="relative z-10 group-hover:text-amber-400 transition-colors duration-300">
                   Reserveer een tafel
                 </span>
@@ -83,9 +87,8 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Scroll indicator */}
           <div
-            className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce"
+            className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce hidden md:flex"
             style={{ animationDuration: "2s" }}
           >
             <span className="text-xs tracking-widest text-gray-400 uppercase">
@@ -95,7 +98,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <HeroCard />
+       
+<HeroCard className="relative z-10 mt-[-4rem] md:mt-[-8rem]" />
+
       </main>
     </>
   );

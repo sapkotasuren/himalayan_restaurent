@@ -1,19 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+interface HeroCardProps {
+  className?: string; // optional
+}
+// const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
+//   return (
+//     <section className="">
+//       <div className="hidden h-24 w-24 md:h-32 md:w-32 bg-[#d4b78f] absolute -top-10 -right-5 shadow-lg lg:flex justify-center items-center rounded-full hover:border-2 hover:border-green-500 hover:shadow-md hover:shadow-green-500 z-30">
+//         <Link href="/contact" className="text-white text-lg font-serif italic">
+//           Contact Us
+//         </Link>
+//       </div>
 
-const HeroCard = () => {
+
+const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
   return (
-    <section className="w-full max-w-screen-lg mx-auto -mt-36 absolute left-1/2 transform -translate-x-1/2 z-20 ">
-      {/* Floating Contact Button */}
+    <section
+      className={`w-full max-w-screen-lg mx-auto
+    relative  md:absolute
+    md:left-1/2
+    md:-translate-x-1/2
+    md:-mt-36
+    z-10 md:z-20 ${className}`}
+    >
       <div className="hidden h-24 w-24 md:h-32 md:w-32 bg-[#d4b78f] absolute -top-10 -right-5 shadow-lg lg:flex justify-center items-center rounded-full hover:border-2 hover:border-green-500 hover:shadow-md hover:shadow-green-500 z-30">
         <Link href="/contact" className="text-white text-lg font-serif italic">
           Contact Us
         </Link>
       </div>
 
+
+
       <div className="bg-gradient-to-br from-[#faf7f2] via-white to-[#f5f0e8] h-full w-full p-6 md:p-8 rounded-2xl shadow-2xl relative overflow-hidden">
-        {/* Decorative Background Elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4b78f]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#8c6d46]/10 rounded-full blur-3xl"></div>
 

@@ -27,7 +27,7 @@ const About = () => {
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#faf7f2] to-white">
       <Navbar />
 
-      <section className="relative min-h-[40vh] lg:min-h-[60vh] w-full overflow-hidden">
+      <section className="relative py-20 min-h-[40vh] lg:min-h-[60vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/bg1.jpeg"

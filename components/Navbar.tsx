@@ -48,7 +48,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 href="/menu"
                 className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f] ${
                   pathname == "/menu"
@@ -57,7 +57,17 @@ const Navbar = () => {
                 }`}
               >
                 Menu
-              </Link>
+              </Link> */}
+              <a
+  href="/menu.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setIsOpen(false)}
+  className="font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]"
+>
+  Menu
+</a>
+
             </li>
             <li>
               <Link
@@ -144,7 +154,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
+            {/* <Link
               href="/menu"
               onClick={() => setIsOpen(false)}
               className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
@@ -152,7 +162,16 @@ const Navbar = () => {
               }`}
             >
               Menu
-            </Link>
+            </Link> */}
+            <a
+  href="/menu.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f]/90 pb-1 border-b-2 border-transparent hover:border-[#d4b78f]"
+>
+  Menu
+</a>
+
           </li>
           <li>
             <Link
