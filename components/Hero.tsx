@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 import HeroCard from "./HeroCard";
 import Link from "next/link";
-import WelcomeModal from "./WelcomeModal";
+// import WelcomeModal from "./WelcomeModal";
 
 
 const Hero = () => {
@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <>
-      <WelcomeModal isOpen={modalOpen} onClose={closeModal} />
+      {/* <WelcomeModal isOpen={modalOpen} onClose={closeModal} /> */}
 
       <main className="relative min-h-[170vh] w-full mx-auto overflow-hidden">
         <Navbar />
