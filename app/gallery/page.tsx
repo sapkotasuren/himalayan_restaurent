@@ -3,8 +3,13 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 const foodItems = [
-  { id: 2, src: "/foods/momo.jpg", title: " Veg Momo" },
- 
+    {id: 1, src: "/foods/thali.jpeg", title: " Thakali Khana" },
+        {id: 2, src: "/foods/momo.jpg", title: " Momo" },
+
+    {id: 3, src: "/foods/platter.jpg", title: " Paneer Tikka" },
+ {id:4, src: "/foods/paneer.jpg", title: " Paneer Curry" },
+ {id:5, src: "/foods/sekwa.jpg", title: " Sekwa" },
+ {id:6, src: "/foods/paratha.jpg", title: " Paratha" },
 ];
 
 const Gallery = () => {

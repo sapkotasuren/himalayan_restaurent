@@ -143,6 +143,19 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col gap-y-8 text-2xl">
           <li>
+
+   
+      <Link
+        href="/"
+        onClick={() => setIsOpen(false)}
+        className={`font-semibold tracking-wide transition-all duration-300 hover:scale-105 hover:text-[#d4b78f] ${
+          pathname == "/" ? "text-[#d4b78f] font-bold" : ""
+        }`}
+      >
+        Home
+      </Link>
+</li>
+          <li>
             <Link
               href="/about"
               onClick={() => setIsOpen(false)}
