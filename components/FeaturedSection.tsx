@@ -78,7 +78,7 @@ const FeaturedSection = () => {
 
           <div className="w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[500px]">
             <Image
-              src="/foodtable.jpg"
+              src="/foods/thali.jpeg"
               alt="Food display"
               width={600}
               height={800}

@@ -61,7 +61,7 @@ const Footer = () => {
                 Wij zijn elke dag open van:
               </h4>
               <p className="text-[#776552]">12:00 - 14:30</p>
-              <p className="text-[#776552]">17:00 - 22:30</p>
+              <p className="text-[#776552]">17:30 - 22:30</p>
             </div>
           </div>
 
