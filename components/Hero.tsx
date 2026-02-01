@@ -50,9 +50,12 @@ const Hero = () => {
 
           <div className="flex items-center gap-3 mb-2">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400"></div>
-            <span className="text-amber-400 text-sm tracking-[0.3em] uppercase font-light">
-              Himalayan Cuisine Since 2010
-            </span>
+           <span className="text-amber-400 text-lg tracking-[0.3em] uppercase font-light text-center block">
+  Himalayan Cuisine
+  <br />
+  <span className="block tracking-normal text-sm mt-1">Since 2010</span>
+</span>
+
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
           </div>
 
