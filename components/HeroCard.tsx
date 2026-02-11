@@ -29,7 +29,7 @@ const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4b78f]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#8c6d46]/10 rounded-full blur-3xl"></div>
 
-        <div className="relative border-2 border-[#d4b78f]/30 h-full rounded-xl p-6 md:p-10 bg-white/40 backdrop-blur-sm">
+        <div className="relative border-2 border-[#d4b78f]/30 h-full rounded-xl p-3 md:p-2 bg-white/40 backdrop-blur-sm">
           <div className="w-full flex flex-col space-y-8">
             <div className="flex flex-col items-center space-y-4">
               <div className="text-center space-y-2">
@@ -162,8 +162,8 @@ const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
                   </h3>
                 </div>
                 <div className="space-y-2 pl-9">
-                  <p className="text-[#513c28]">Lunch: 12 to 14:30</p>
-                  <p className="text-[#513c28]">Diner: 17:30- 22:30</p>
+                  <p className="text-[#513c28]">Lunch: 12 to 14:00</p>
+                  <p className="text-[#513c28]">Diner: 17:15- 21:30</p>
                 </div>
               </div>
             </div>
