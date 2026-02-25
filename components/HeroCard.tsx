@@ -74,7 +74,7 @@ const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
               <div className="bg-gradient-to-br from-white to-[#faf7f2] p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-[#d4b78f]/20 group">
                 <div className="flex items-center space-x-3 mb-3">
                   <svg
@@ -139,31 +139,6 @@ const HeroCard: React.FC<HeroCardProps> = ({ className }) => {
                   <p className="text-[#513c28] font-serif leading-relaxed">
                     Oudburg 1, 9000 Gent
                   </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-white to-[#faf7f2] p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-[#d4b78f]/20 group">
-                <div className="flex items-center space-x-3 mb-3">
-                  <svg
-                    className="w-6 h-6 text-[#8c6d46] group-hover:scale-110 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <h3 className="text-[#8c6d46] font-bold uppercase text-sm tracking-wider">
-                    Openingsuur
-                  </h3>
-                </div>
-                <div className="space-y-2 pl-9">
-                  <p className="text-[#513c28]">Lunch: 12 to 14:00</p>
-                  <p className="text-[#513c28]">Diner: 17:15- 21:30</p>
                 </div>
               </div>
             </div>
