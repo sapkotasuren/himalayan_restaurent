@@ -3,13 +3,13 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 const foodItems = [
-    {id: 1, src: "/foods/thali.jpeg", title: " Thakali Khana" },
-        {id: 2, src: "/foods/momo.jpg", title: " Momo" },
+  { id: 1, src: "/foods/thali.jpeg", title: " Thakali Khana" },
+  { id: 2, src: "/foods/momo.jpg", title: " Momo" },
 
-    {id: 3, src: "/foods/platter.jpg", title: " Paneer Tikka" },
- {id:4, src: "/foods/paneer.jpg", title: " Paneer Curry" },
- {id:5, src: "/foods/sekwa.jpg", title: " Sekwa" },
- {id:6, src: "/foods/paratha.jpg", title: " Paratha" },
+  { id: 3, src: "/foods/platter.jpg", title: " Paneer Tikka" },
+  { id: 4, src: "/foods/paneer.jpg", title: " Paneer Curry" },
+  { id: 5, src: "/foods/sekwa.jpg", title: " Sekwa" },
+  { id: 6, src: "/foods/paratha.jpg", title: " Paratha" },
 ];
 
 const Gallery = () => {
@@ -31,7 +31,7 @@ const Gallery = () => {
         <div className="relative mx-auto max-w-screen-lg w-full min-h-[50vh] flex flex-col justify-center items-center text-white text-center px-4 pt-10">
           <h1 className="text-4xl font-bold mb-4">Gallery</h1>
           <p className="text-lg italic">
-            &quot;A Taste of India & Nepal, Right in Belgium!&quot;
+            &quot;De smaken van India en Nepal, gewoon in België!&quot;
           </p>
         </div>
       </section>
@@ -58,9 +58,7 @@ const Gallery = () => {
 
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
-                <p className="text-white text-xl font-semibold">
-                  {item.title}
-                </p>
+                <p className="text-white text-xl font-semibold">{item.title}</p>
               </div>
             </div>
           ))}
