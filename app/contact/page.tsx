@@ -42,10 +42,13 @@ const Contact = () => {
               </h4>
               <div className="text-[#776552] space-y-2">
                 <div className="flex justify-between">
-                  <span>Lunch: 12:00 - 14:00</span>
+                  <span>Ma-Vr: 12-14:30 & 17-22:00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Diner: 17:15 - 21:30</span>
+                  <span>Zaterdag: 12:00-22:30</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Zondag: 12:00-22:00</span>
                 </div>
               </div>
             </div>
@@ -91,7 +94,7 @@ const Contact = () => {
               <h4 className="font-serif text-[#513c28] text-lg mb-2"></h4>
               <div className="text-[#776552] space-y-1">
                 <p className="font-medium">Oudburg 1 9000 Gent, Belgium</p>
-                <p>Onderneming nr:</p>
+                <p>Onderneming nr: 0719.533.330</p>
               </div>
             </div>
           </div>
